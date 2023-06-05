@@ -4,7 +4,7 @@
   --color-white: #e4dceb;
   --color-darkblue: #206c5a;
   --color-darkblue-alpha: rgba(5, 241, 48, 0.151);
-  --color-green: #22c677; 
+  --color-green: #0f6b21; 
 }
 
 *,
@@ -121,7 +121,7 @@ button {
 form {
   background: var(--color-darkblue-alpha);
   padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 480px) {
