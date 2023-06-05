@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/5bd94a3fb0.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Monserrat:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">New World Epcot Center Services Experience Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for collaborate to make a better service for you
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Whats your opinion about our services?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Whats your opinion about our services</option>
+            <option value="I Love it">I Love it</option>
+            <option value="Its Super">Its Super</option>
+            <option value="So bad">So bad</option>
+            <option value="I hate it">I hate it</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend ours services?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="off-course"
+              type="radio"
+              class="input-radio"
+              checked
+            />Off Course</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite services of New World?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Food Quality">Food Quality</option>
+            <option value="Speed Service">Speed Service</option>
+            <option value="Beverage Services">Beverage Services</option>
+            <option value="Careful attention">Careful Attention</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see to strengthen our services?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="less-waiting-time"
+              type="checkbox"
+              class="input-checkbox"
+            />Less waiting time</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="More-special-attractions"
+              type="checkbox"
+              class="input-checkbox"
+            />More special attractions</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="add-more-technology"
+              type="checkbox"
+              class="input-checkbox"
+            />add more technology</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Diversity-of-menus"
+              type="checkbox"
+              class="input-checkbox"
+            />Diversity of menus</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Any suggestions are welcome here...maybe a child area?"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
